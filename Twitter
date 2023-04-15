@@ -1,0 +1,5 @@
+     v18 = game.Players.LocalPlayer.Name
+	   Text = "Become a Capybara Today! - https://discord.gg/NsEcwFgS"
+    wait(0.1)
+    game.ReplicatedStorage.TwitterPost:FireServer(Text)
+
