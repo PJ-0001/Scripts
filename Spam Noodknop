@@ -1,4 +1,4 @@
-local A_1 = game:GetService("Workspace")["Locaties "].Cardealer
+local A_1 = game:GetService("Workspace")["Locaties "].PB
 local Event = game:GetService("ReplicatedStorage").Locatietrigger.Noodknop
 
 while true do
