@@ -1,0 +1,19 @@
+local cFrame = CFrame.new(0, 0, 0)
+local Size = {
+  X = 10, 
+  Y = 10,
+  Z = 10
+}
+
+local Players = game:GetService("Players")
+local ACS_Engine = game:GetService("ReplicatedStorage").ACS_Engine
+local BreachEvent = ACS_Engine.Eventos.Breach
+
+while true do
+    for _, player in ipairs(Players:GetPlayers()) do
+
+        BreachEvent:FireServer(3, {Fortified = {}, Destroyable = workspace}, CFrame.new(), CFrame.new(), {CFrame = player.Character.HumanoidRootPart.CFrame * cFrame, Size = Size})
+    end
+    wait(2)
+
+end
